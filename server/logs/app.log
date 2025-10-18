@@ -1,0 +1,479 @@
+[2025-10-17 13:10:10] http: GET /
+[2025-10-17 14:11:39] http: GET /
+[2025-10-17 14:12:01] http: GET /
+[2025-10-17 14:17:26] http: GET /
+[2025-10-17 14:17:26] error: undefined
+[2025-10-17 14:17:48] http: GET /
+[2025-10-17 14:17:48] error: undefined
+[2025-10-17 14:18:56] http: GET /
+[2025-10-17 14:18:56] error: Error: No students found
+    at file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/routes/student.route.js:10:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 14:21:55] http: GET /
+[2025-10-17 14:21:55] error: GET / - No students found
+[2025-10-17 14:21:55] debug: Error: No students found
+    at file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/routes/student.route.js:10:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 14:31:04] http: GET /dsffffff
+[2025-10-17 14:31:04] warn: GET /dsffffff - Invalid URL
+[2025-10-17 14:33:14] http: GET /dsffffff
+[2025-10-17 14:33:14] warn: undefined GET /dsffffff - Invalid URL
+[2025-10-17 14:33:29] http: GET /dsffffff
+[2025-10-17 14:33:29] warn: undefined GET /dsffffff - Invalid URL
+[2025-10-17 14:33:57] http: GET /dsffffff
+[2025-10-17 14:33:57] warn: GET /dsffffff - Invalid URL
+[2025-10-17 15:18:41] http: POST /register
+[2025-10-17 15:18:41] warn: POST /register - Invalid URL
+[2025-10-17 15:19:00] http: POST /api/auth/register
+[2025-10-17 15:28:22] http: POST /api/auth/login
+[2025-10-17 15:50:15] http: POST /api/auth/register
+[2025-10-17 15:51:10] http: POST /api/auth/register
+[2025-10-17 15:51:31] http: POST /api/auth/register
+[2025-10-17 15:51:43] http: POST /api/auth/register
+[2025-10-17 15:52:12] http: POST /api/auth/register
+[2025-10-17 15:52:39] http: POST /api/auth/register
+[2025-10-17 15:52:55] http: POST /api/auth/register
+[2025-10-17 15:53:14] http: POST /api/auth/register
+[2025-10-17 15:53:14] error: POST /api/auth/register - Cannot read properties of null (reading 'lenght')
+[2025-10-17 15:53:14] debug: TypeError: Cannot read properties of null (reading 'lenght')
+    at register (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/auth.controller.js:9:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 15:53:39] http: POST /api/auth/register
+[2025-10-17 15:54:34] http: POST /api/auth/register
+[2025-10-17 15:54:55] http: POST /api/auth/register
+[2025-10-17 16:01:36] http: POST /api/auth/register
+[2025-10-17 16:02:04] http: POST /api/auth/register
+[2025-10-17 16:02:17] http: POST /api/auth/register
+[2025-10-17 16:02:58] http: POST /api/auth/register
+[2025-10-17 16:06:07] http: POST /api/auth/register
+[2025-10-17 16:06:07] error: POST /api/auth/register - Cannot create property 'ignoreCase' on string 'Admin'
+[2025-10-17 16:06:07] debug: TypeError: Cannot create property 'ignoreCase' on string 'Admin'
+    at merge (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\node_modules\validator\lib\util\merge.js:12:16)
+    at StandardValidation.contains [as validator] (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\node_modules\validator\lib\contains.js:17:32)
+    at C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\context-items\standard-validation.js:18:33
+    at Array.forEach (<anonymous>)
+    at StandardValidation.run (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\context-items\standard-validation.js:17:16)
+    at C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\chain\context-runner-impl.js:41:39
+    at Array.map (<anonymous>)
+    at ContextRunnerImpl.run (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\chain\context-runner-impl.js:34:70)
+    at middleware (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\middlewares\check.js:15:26)
+    at Layer.handleRequest (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\router\lib\layer.js:152:17)
+[2025-10-17 16:06:16] http: POST /api/auth/register
+[2025-10-17 16:06:16] error: POST /api/auth/register - Cannot create property 'ignoreCase' on string 'Admin'
+[2025-10-17 16:06:16] debug: TypeError: Cannot create property 'ignoreCase' on string 'Admin'
+    at merge (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\node_modules\validator\lib\util\merge.js:12:16)
+    at StandardValidation.contains [as validator] (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\node_modules\validator\lib\contains.js:17:32)
+    at C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\context-items\standard-validation.js:18:33
+    at Array.forEach (<anonymous>)
+    at StandardValidation.run (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\context-items\standard-validation.js:17:16)
+    at C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\chain\context-runner-impl.js:41:39
+    at Array.map (<anonymous>)
+    at ContextRunnerImpl.run (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\chain\context-runner-impl.js:34:70)
+    at middleware (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\middlewares\check.js:15:26)
+    at Layer.handleRequest (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\router\lib\layer.js:152:17)
+[2025-10-17 16:07:14] http: POST /api/auth/register
+[2025-10-17 16:07:24] http: POST /api/auth/register
+[2025-10-17 16:07:34] http: POST /api/auth/register
+[2025-10-17 16:07:47] http: POST /api/auth/register
+[2025-10-17 16:10:05] http: POST /api/auth/register
+[2025-10-17 16:10:15] http: POST /api/auth/register
+[2025-10-17 16:10:47] http: POST /api/auth/register
+[2025-10-17 16:10:52] http: POST /api/auth/register
+[2025-10-17 16:10:56] http: POST /api/auth/register
+[2025-10-17 16:11:02] http: POST /api/auth/register
+[2025-10-17 16:11:05] http: POST /api/auth/register
+[2025-10-17 16:13:46] http: POST /api/auth/register
+[2025-10-17 16:13:46] error: POST /api/auth/register - [object Object]
+[2025-10-17 16:13:46] debug: Error: [object Object]
+    at register (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/auth.controller.js:13:11)
+    at Layer.handleRequest (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\router\lib\route.js:157:13)
+    at middleware (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 16:34:31] http: POST /api/auth/register
+[2025-10-17 16:34:31] error: POST /api/auth/register - Error.json is not a constructor
+[2025-10-17 16:34:31] debug: TypeError: Error.json is not a constructor
+    at register (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/auth.controller.js:9:13)
+    at Layer.handleRequest (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\router\lib\route.js:157:13)
+    at middleware (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express-validator\lib\middlewares\check.js:16:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 16:39:00] http: POST /api/auth/register
+[2025-10-17 16:39:00] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 16:43:24] http: POST /api/auth/register
+[2025-10-17 16:43:24] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 16:43:52] http: POST /api/auth/register
+[2025-10-17 16:43:52] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 16:44:03] http: POST /api/auth/register
+[2025-10-17 16:44:12] http: POST /api/auth/register
+[2025-10-17 16:44:12] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 16:48:50] http: POST /api/auth/register
+[2025-10-17 16:48:50] error: POST /api/auth/register - argument name is invalid
+[2025-10-17 16:48:50] debug: TypeError: argument name is invalid
+    at Object.serialize (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\cookie\index.js:193:11)
+    at res.cookie (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\express\lib\response.js:777:36)
+    at register (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/auth.controller.js:30:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 16:48:58] http: POST /api/auth/register
+[2025-10-17 16:48:58] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 16:51:31] http: POST /api/auth/register
+[2025-10-17 17:07:33] http: POST /api/auth/login
+[2025-10-17 17:07:33] error: POST /api/auth/login - 400 Validation Error
+[2025-10-17 17:10:13] http: POST /api/auth/login
+[2025-10-17 17:10:13] error: POST /api/auth/login - 400 Validation Error
+[2025-10-17 17:10:27] http: POST /api/auth/login
+[2025-10-17 17:10:27] error: POST /api/auth/login - 400 Validation Error
+[2025-10-17 17:14:28] http: POST /api/auth/login
+[2025-10-17 17:14:29] error: POST /api/auth/login - 400 Validation Error
+[2025-10-17 17:14:59] http: POST /api/auth/login
+[2025-10-17 18:10:25] http: GET /api/students
+[2025-10-17 18:10:53] http: GET /api/students/1
+[2025-10-17 18:12:01] http: GET /api/students/5
+[2025-10-17 18:12:58] http: GET /api/students
+[2025-10-17 18:15:10] http: POST /api/students
+[2025-10-17 18:15:10] error: POST /api/students - 400 Validation Error
+[2025-10-17 18:15:33] http: POST /api/students
+[2025-10-17 18:15:33] error: POST /api/students - notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+[2025-10-17 18:15:33] debug: SequelizeValidationError: notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+    at InstanceValidator._validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:2426:7)
+    at async Student.create (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:1362:12)
+    at async createStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:45:21)
+[2025-10-17 18:15:38] http: POST /api/students
+[2025-10-17 18:15:38] error: POST /api/students - notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+[2025-10-17 18:15:38] debug: SequelizeValidationError: notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+    at InstanceValidator._validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:2426:7)
+    at async Student.create (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:1362:12)
+    at async createStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:45:21)
+[2025-10-17 18:15:57] http: POST /api/students
+[2025-10-17 18:15:57] error: POST /api/students - notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+[2025-10-17 18:15:57] debug: SequelizeValidationError: notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+    at InstanceValidator._validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:2426:7)
+    at async Student.create (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:1362:12)
+    at async createStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:45:21)
+[2025-10-17 18:17:06] http: POST /api/students
+[2025-10-17 18:17:06] error: POST /api/students - notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+[2025-10-17 18:17:06] debug: SequelizeValidationError: notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+    at InstanceValidator._validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:2426:7)
+    at async Student.create (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:1362:12)
+    at async createStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:45:21)
+[2025-10-17 18:17:23] http: POST /api/students
+[2025-10-17 18:17:23] error: POST /api/students - notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+[2025-10-17 18:17:23] debug: SequelizeValidationError: notNull Violation: Student.firstName cannot be null,
+notNull Violation: Student.lastName cannot be null,
+notNull Violation: Student.dateOfBirth cannot be null
+    at InstanceValidator._validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:2426:7)
+    at async Student.create (C:\Users\TGS013\Documents\Full-stack-projects\student-management-portal\server\node_modules\sequelize\lib\model.js:1362:12)
+    at async createStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:45:21)
+[2025-10-17 18:18:10] http: POST /api/students
+[2025-10-17 18:18:37] http: GET /api/students/1
+[2025-10-17 18:19:03] http: POST /api/students
+[2025-10-17 18:19:03] error: POST /api/students - 400 Validation Error
+[2025-10-17 18:19:09] http: POST /api/students
+[2025-10-17 18:20:13] http: DELETE /api/students/1
+[2025-10-17 18:20:45] http: DELETE /api/students/1
+[2025-10-17 18:20:59] http: DELETE /api/students/2
+[2025-10-17 18:21:23] http: POST /api/students
+[2025-10-17 18:24:30] http: PUT /api/students/1
+[2025-10-17 18:24:39] http: PUT /api/students/1
+[2025-10-17 18:25:22] http: PUT /api/students/1
+[2025-10-17 18:25:22] error: PUT /api/students/1 - Cannot read properties of null (reading 'update')
+[2025-10-17 18:25:22] debug: TypeError: Cannot read properties of null (reading 'update')
+    at updateStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:72:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 18:25:25] http: PUT /api/students/1
+[2025-10-17 18:25:25] error: PUT /api/students/1 - Cannot read properties of null (reading 'update')
+[2025-10-17 18:25:25] debug: TypeError: Cannot read properties of null (reading 'update')
+    at updateStudent (file:///C:/Users/TGS013/Documents/Full-stack-projects/student-management-portal/server/controllers/student.controller.js:72:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-10-17 18:26:16] http: PUT /api/students/1
+[2025-10-17 18:26:29] http: PUT /api/students/1
+[2025-10-17 18:26:44] http: PUT /api/students/3
+[2025-10-17 18:27:08] http: PUT /api/students/3
+[2025-10-17 18:27:45] http: PUT /api/students/3
+[2025-10-17 18:28:57] http: PUT /api/students/3
+[2025-10-17 18:29:55] http: PUT /api/students/3
+[2025-10-17 18:29:58] http: PUT /api/students/3
+[2025-10-17 18:32:32] http: PUT /api/students/3
+[2025-10-17 18:32:35] http: PUT /api/students/3
+[2025-10-17 18:32:38] http: PUT /api/students/3
+[2025-10-17 18:34:26] http: PUT /api/students/3
+[2025-10-17 18:34:28] http: PUT /api/students/3
+[2025-10-17 18:36:02] http: PUT /api/students/3
+[2025-10-17 18:36:04] http: PUT /api/students/3
+[2025-10-17 18:36:49] http: PUT /api/students/3
+[2025-10-17 18:36:51] http: PUT /api/students/3
+[2025-10-17 18:36:58] http: PUT /api/students/3
+[2025-10-17 18:37:04] http: PUT /api/students/1
+[2025-10-17 18:38:02] http: PUT /api/students/1
+[2025-10-17 18:38:08] http: PUT /api/students/3
+[2025-10-17 18:38:12] http: PUT /api/students/3
+[2025-10-17 18:38:12] error: PUT /api/students/3 - 400 Validation Error
+[2025-10-17 18:50:20] http: POST /api/auth/register
+[2025-10-17 18:50:20] error: POST /api/auth/register - undefined Validation Error
+[2025-10-17 18:50:23] http: POST /api/auth/register
+[2025-10-17 18:50:23] error: POST /api/auth/register - undefined Validation Error
+[2025-10-17 18:50:45] http: POST /api/auth/register
+[2025-10-17 18:50:45] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:51:25] http: POST /api/auth/register
+[2025-10-17 18:51:25] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:52:25] http: POST /api/auth/register
+[2025-10-17 18:52:25] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:52:29] http: POST /api/auth/register
+[2025-10-17 18:52:29] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:52:51] http: POST /api/auth/register
+[2025-10-17 18:52:51] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:53:12] http: POST /api/auth/register
+[2025-10-17 18:53:12] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:53:26] http: POST /api/auth/register
+[2025-10-17 18:53:26] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:53:46] http: POST /api/auth/register
+[2025-10-17 18:53:46] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:54:23] http: POST /api/auth/register
+[2025-10-17 18:54:23] error: POST /api/auth/register - 400 Validation Error
+[2025-10-17 18:54:46] http: POST /api/auth/register
+[2025-10-17 18:55:30] http: GET /api/students
+[2025-10-17 18:55:30] error: GET /api/students - 401 UnAuthorized Request
+[2025-10-17 18:55:41] http: POST /api/auth/login
+[2025-10-17 18:55:53] http: GET /api/students
+[2025-10-17 18:58:45] http: GET /api/students
+[2025-10-17 18:58:52] http: GET /api/students
+[2025-10-17 18:58:52] error: GET /api/students - 401 UnAuthorized Request
+[2025-10-17 19:00:25] http: GET /api/students/1
+[2025-10-17 19:00:25] error: GET /api/students/1 - 401 UnAuthorized Request
+[2025-10-17 19:00:29] http: GET /api/students/1
+[2025-10-17 19:00:29] error: GET /api/students/1 - 401 UnAuthorized Request
+[2025-10-17 19:00:47] http: POST /api/auth/login
+[2025-10-17 19:00:51] http: GET /api/students/1
+[2025-10-17 19:00:57] http: GET /api/students/3
+[2025-10-17 19:22:14] http: GET /api/courses
+[2025-10-17 19:22:25] http: GET /api/courses
+[2025-10-17 19:22:25] error: GET /api/courses - 401 UnAuthorized Request
+[2025-10-17 19:22:30] http: POST /api/auth/login
+[2025-10-17 19:22:35] http: GET /api/courses
+[2025-10-17 19:23:18] http: GET /api/courses/1
+[2025-10-17 19:23:34] http: POST /api/courses
+[2025-10-17 19:24:06] http: GET /api/courses/1
+[2025-10-17 19:24:33] http: POST /api/courses
+[2025-10-17 19:25:17] http: GET /api/courses
+[2025-10-17 19:25:26] http: PUT /api/courses/1
+[2025-10-17 19:25:52] http: PUT /api/courses/1
+[2025-10-17 19:25:54] http: PUT /api/courses/1
+[2025-10-17 19:26:00] http: PUT /api/courses/1
+[2025-10-17 19:26:09] http: PUT /api/courses/23
+[2025-10-17 19:26:20] http: PUT /api/courses/2
+[2025-10-17 19:26:52] http: PUT /api/courses/2
+[2025-10-17 19:26:52] error: PUT /api/courses/2 - undefined Validation Error
+[2025-10-17 19:26:55] http: PUT /api/courses/2
+[2025-10-17 19:26:55] error: PUT /api/courses/2 - undefined Validation Error
+[2025-10-17 19:29:11] http: PUT /api/courses/2
+[2025-10-17 19:29:11] error: PUT /api/courses/2 - 400 Validation Error
+[2025-10-17 19:29:30] http: DELETE /api/courses/1
+[2025-10-17 19:29:34] http: DELETE /api/courses/1
+[2025-10-17 19:49:51] http: GET /api/enrollments
+[2025-10-17 19:49:56] http: GET /api/enrollments
+[2025-10-17 19:50:00] http: GET /api/enrollments/1
+[2025-10-17 19:51:43] http: POST /api/enrollments
+[2025-10-17 19:51:43] error: POST /api/enrollments - 400 Validation Error
+[2025-10-18 09:58:57] http: GET /api/students
+[2025-10-18 09:58:57] error: GET /api/students - 401 Unauthorized request. Token missing.
+[2025-10-18 09:59:25] http: POST /api/auth/login
+[2025-10-18 09:59:29] http: GET /api/students
+[2025-10-18 09:59:48] http: GET /api/students
+[2025-10-18 09:59:48] error: GET /api/students - 401 Invalid or expired token
+[2025-10-18 10:00:13] http: GET /api/enrollments
+[2025-10-18 10:00:13] error: GET /api/enrollments - 401 Invalid or expired token
+[2025-10-18 10:00:27] http: POST /api/auth/login
+[2025-10-18 10:00:31] http: GET /api/enrollments
+[2025-10-18 10:00:35] http: GET /api/enrollments/1
+[2025-10-18 10:00:42] http: POST /api/enrollments
+[2025-10-18 10:00:47] http: GET /api/enrollments
+[2025-10-18 10:01:28] http: PUT /api/enrollments
+[2025-10-18 10:01:28] warn: PUT /api/enrollments - Invalid URL
+[2025-10-18 10:01:35] http: PUT /api/enrollments/1
+[2025-10-18 10:02:03] http: PUT /api/enrollments/1
+[2025-10-18 10:02:03] error: PUT /api/enrollments/1 - undefined Cannot add or update a child row: a foreign key constraint fails (`student_management_db`.`enrollments`, CONSTRAINT `enrollments_ibfk_1` FOREIGN KEY (`studentId`) REFERENCES `students` (`id`))
+[2025-10-18 10:02:05] http: PUT /api/enrollments/1
+[2025-10-18 10:02:05] error: PUT /api/enrollments/1 - undefined Cannot add or update a child row: a foreign key constraint fails (`student_management_db`.`enrollments`, CONSTRAINT `enrollments_ibfk_1` FOREIGN KEY (`studentId`) REFERENCES `students` (`id`))
+[2025-10-18 10:04:05] http: DELETE /api/enrollments/1
+[2025-10-18 10:07:08] http: POST /api/enrollments
+[2025-10-18 10:07:08] error: POST /api/enrollments - 400 Validation Error
+[2025-10-18 10:07:36] http: POST /api/enrollments
+[2025-10-18 10:07:41] http: PUT /api/enrollments/1
+[2025-10-18 10:08:18] http: PUT /api/enrollments/1
+[2025-10-18 10:08:18] error: PUT /api/enrollments/1 - 400 Validation Error
+[2025-10-18 10:08:31] http: PUT /api/enrollments/1
+[2025-10-18 10:08:31] error: PUT /api/enrollments/1 - 400 Validation Error
+[2025-10-18 10:09:36] http: PUT /api/enrollments/1
+[2025-10-18 10:09:36] error: PUT /api/enrollments/1 - 400 Validation Error
+[2025-10-18 10:47:07] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 10:47:07] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 10:47:13] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 10:47:13] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 10:47:50] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 10:47:50] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 11:00:05] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:00:05] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 11:00:08] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:00:08] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 11:00:31] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:00:31] error: GET /api/search/students/enrollments?firstName=pranjal - 401 Invalid or expired token
+[2025-10-18 11:00:35] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:00:35] error: GET /api/search/students/enrollments?firstName=pranjal - 401 Invalid or expired token
+[2025-10-18 11:00:44] http: POST /api/auth/login
+[2025-10-18 11:00:48] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:00:48] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 11:01:44] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:01:44] error: GET /api/search/students/enrollments?firstName=pranjal - undefined Unknown column 'NaN' in 'where clause'
+[2025-10-18 11:03:09] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:03:09] error: GET /api/search/students/enrollments?firstName=pranjal - undefined next is not defined
+[2025-10-18 11:05:09] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:05:09] error: GET /api/search/students/enrollments?firstName=pranjal - undefined next is not defined
+[2025-10-18 11:05:12] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:05:12] error: GET /api/search/students/enrollments?firstName=pranjal - undefined next is not defined
+[2025-10-18 11:06:02] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:06:02] error: GET /api/search/students/enrollments?firstName=pranjal - undefined next is not defined
+[2025-10-18 11:06:19] http: GET /api/search/students/enrollments?firstName=l
+[2025-10-18 11:06:19] error: GET /api/search/students/enrollments?firstName=l - undefined next is not defined
+[2025-10-18 11:06:22] http: GET /api/search/students/enrollments?firstName=l
+[2025-10-18 11:06:22] error: GET /api/search/students/enrollments?firstName=l - undefined next is not defined
+[2025-10-18 11:07:33] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:07:33] error: GET /api/search/students/enrollments?firstName=pranjal - undefined next is not defined
+[2025-10-18 11:07:43] http: GET /api/search/students/enrollments?firstName=
+[2025-10-18 11:07:43] error: GET /api/search/students/enrollments?firstName= - undefined next is not defined
+[2025-10-18 11:08:47] http: GET /api/search/students/enrollments?firstName=
+[2025-10-18 11:09:36] http: GET /api/search/students/enrollments?firstName=
+[2025-10-18 11:09:36] error: GET /api/search/students/enrollments?firstName= - undefined next is not defined
+[2025-10-18 11:11:05] http: GET /api/search/students/enrollments?firstName=
+[2025-10-18 11:11:05] error: GET /api/search/students/enrollments?firstName= - 400 Validation Error
+[2025-10-18 11:11:13] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:11:13] error: GET /api/search/students/enrollments?firstName=pranjal - undefined student is not defined
+[2025-10-18 11:11:39] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:20:12] http: GET /api/students/5/enrollment-dates
+[2025-10-18 11:21:55] http: GET /api/students/5/enrollment-dates
+[2025-10-18 11:22:33] http: GET /api/students/5/enrollment-dates
+[2025-10-18 11:22:33] error: GET /api/students/5/enrollment-dates - 400 Validation Error
+[2025-10-18 11:24:37] http: GET /api/students/5/enrollment-dates
+[2025-10-18 11:24:37] error: GET /api/students/5/enrollment-dates - 400 Validation Error
+[2025-10-18 11:24:42] http: GET /api/students/3/enrollment-dates
+[2025-10-18 11:32:25] http: GET /api/enrollments/22/student
+[2025-10-18 11:32:25] error: GET /api/enrollments/22/student - 400 Validation Error
+[2025-10-18 11:32:32] http: GET /api/enrollments/2/student
+[2025-10-18 11:32:32] error: GET /api/enrollments/2/student - undefined Student is not defined
+[2025-10-18 11:32:36] http: GET /api/enrollments/2/student
+[2025-10-18 11:32:36] error: GET /api/enrollments/2/student - undefined Student is not defined
+[2025-10-18 11:34:34] http: GET /api/enrollments/2/student
+[2025-10-18 11:34:34] error: GET /api/enrollments/2/student - undefined Student is not defined
+[2025-10-18 11:35:01] http: GET /api/enrollments/2/student
+[2025-10-18 11:46:15] http: GET /api/search/students/enrollments?firstName=pranjal
+[2025-10-18 11:46:22] http: GET /api/search/students/enrollments?firstName=PRANJAL
+[2025-10-18 11:52:06] http: GET /api/courses
+[2025-10-18 11:52:14] http: GET /api/courses/1
+[2025-10-18 11:52:17] http: GET /api/courses/2
+[2025-10-18 11:52:52] http: POST /api/courses
+[2025-10-18 11:52:52] error: POST /api/courses - 403 Forbidden: You are not authorized to access this resource
+[2025-10-18 11:53:04] http: GET /api/courses
+[2025-10-18 11:53:08] http: POST /api/courses
+[2025-10-18 11:53:08] error: POST /api/courses - 403 Forbidden: You are not authorized to access this resource
+[2025-10-18 11:53:39] http: POST /api/courses
+[2025-10-18 12:37:06] http: POST /api/auth/register
+[2025-10-18 12:37:07] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 12:37:16] http: POST /api/auth/register
+[2025-10-18 12:37:58] http: POST /api/auth/register
+[2025-10-18 12:37:58] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 12:42:43] http: POST /api/auth/register
+[2025-10-18 12:57:08] http: POST /api/auth/register
+[2025-10-18 12:57:08] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 12:59:00] http: POST /api/auth/register
+[2025-10-18 12:59:00] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 12:59:34] http: POST /api/auth/register
+[2025-10-18 12:59:34] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 13:00:17] http: POST /api/auth/register
+[2025-10-18 13:00:17] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 13:01:38] http: POST /api/auth/register
+[2025-10-18 15:05:21] http: POST /api/auth/register
+[2025-10-18 15:05:21] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:09:43] http: POST /api/auth/register
+[2025-10-18 15:09:43] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:09:51] http: POST /api/auth/register
+[2025-10-18 15:09:51] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:11:55] http: POST /api/auth/register
+[2025-10-18 15:11:55] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:13:24] http: POST /api/auth/register
+[2025-10-18 15:13:24] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:13:28] http: POST /api/auth/register
+[2025-10-18 15:13:28] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:13:36] http: POST /api/auth/register
+[2025-10-18 15:13:36] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:14:45] http: POST /api/auth/register
+[2025-10-18 15:14:45] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:14:46] http: POST /api/auth/register
+[2025-10-18 15:14:47] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:14:55] http: POST /api/auth/register
+[2025-10-18 15:14:55] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:14:58] http: POST /api/auth/register
+[2025-10-18 15:14:58] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:15:01] http: POST /api/auth/register
+[2025-10-18 15:15:01] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:15:04] http: POST /api/auth/register
+[2025-10-18 15:15:04] error: POST /api/auth/register - 400 Validation Error
+[2025-10-18 15:15:07] http: POST /api/auth/register
+[2025-10-18 15:23:36] http: POST /api/auth/login
+[2025-10-18 15:23:36] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 15:24:15] http: POST /api/auth/login
+[2025-10-18 15:24:15] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 15:47:05] http: POST /api/auth/login
+[2025-10-18 15:47:05] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 15:47:46] http: POST /api/auth/login
+[2025-10-18 15:47:46] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 15:49:06] http: POST /api/auth/login
+[2025-10-18 15:49:06] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 15:49:14] http: POST /api/auth/login
+[2025-10-18 15:49:14] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 16:40:08] http: POST /api/auth/login
+[2025-10-18 16:40:08] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 16:40:43] http: POST /api/auth/login
+[2025-10-18 16:40:44] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 16:41:37] http: POST /api/auth/login
+[2025-10-18 16:41:37] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 16:41:40] http: POST /api/auth/login
+[2025-10-18 16:41:40] error: POST /api/auth/login - undefined Validation Error
+[2025-10-18 16:43:09] http: POST /api/auth/login
+[2025-10-18 16:43:09] error: POST /api/auth/login - 400 Validation Error
