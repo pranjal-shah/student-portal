@@ -1,6 +1,7 @@
 import { validationResult } from "express-validator";
 import Enrollment from "../models/enrollments.model.js";
 import Student from "../models/students.model.js";
+import Course from "../models/courses.model.js";
 
 const getEnrolledStudent = async (req, res, next) => {
   try {
@@ -37,11 +38,39 @@ const getEnrolledStudent = async (req, res, next) => {
 
 const getAllEnrollments = async (req, res, next) => {
   try {
-    const enrollments = await Enrollment.findAll();
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+
+    const offset = (page - 1) * limit;
+
+    // const enrollments = await Enrollment.findAll();
+
+    const { count, rows: enrollments } = await Enrollment.findAndCountAll({
+      limit,
+      offset,
+      order: [["createdAt", "DESC"]],
+      include: [
+        {
+          model: Student,
+          attributes: ["firstName"],
+        },
+        {
+          model: Course,
+          attributes: ["courseName"],
+        },
+      ],
+    });
+
     res.status(200).json({
       success: true,
       message: "Get all enrollments",
       enrollment: enrollments,
+      pagination: {
+        totalItems: count,
+        totalPages: Math.ceil(count / limit),
+        currentPage: page,
+        limit: limit,
+      },
     });
   } catch (error) {
     next(error);

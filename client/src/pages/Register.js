@@ -1,11 +1,14 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { register } from "../apis/auth.api";
+import "../auth.css";
+import { useDispatch } from "react-redux";
 
 const Register = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const dispatch = useDispatch();
+
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
@@ -19,6 +22,14 @@ const Register = () => {
     name: "",
   });
 
+  useEffect(() => {
+    if (location.pathname.startsWith("/register")) {
+      document.body.className = "auth-body";
+    } else {
+      document.body.className = "home-body";
+    }
+  }, [location]);
+
   const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({
@@ -31,7 +42,7 @@ const Register = () => {
     let email, password, name;
     email = password = name = null;
     data.errors.map((err) => {
-      err.path === "email"
+      return err.path === "email"
         ? (email = err.msg)
         : err.path === "password"
         ? (password = err.msg)
@@ -45,18 +56,13 @@ const Register = () => {
     });
   };
 
-  const handleSuccess = (msg) =>
-    toast.success(msg, {
-      position: "bottom-right",
-    });
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const data = await register(inputValue);
-      const { success, message } = data;
+      const { success } = data;
       if (success) {
-        handleSuccess(message);
+        dispatch({ type: "user/setUser", payload: data.user });
         setTimeout(() => {
           navigate("/");
         }, 1000);
@@ -135,7 +141,6 @@ const Register = () => {
           Already have an account? <Link to={"/login"}>Login</Link>
         </span>
       </form>
-      <ToastContainer />
     </div>
   );
 };

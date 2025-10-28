@@ -14,7 +14,7 @@ import {
   validateFirstname,
   validateStudent,
 } from "../middlewares/validation.middleware.js";
-import authorizeMiddleware from "../middlewares/authorize.middleware.js"
+import authorizeMiddleware from "../middlewares/authorize.middleware.js";
 
 const router = express.Router();
 
@@ -30,6 +30,6 @@ router.post("/", createStudentValidator, createStudent);
 
 router.put("/:id", updateStudentValidator, updateStudent);
 
-router.delete("/:id", authorizeMiddleware('Admin'), deleteStudent);
+router.delete("/:id", authorizeMiddleware("Admin"), deleteStudent);
 
 export default router;

@@ -4,11 +4,32 @@ import { Student, Enrollment, Course } from "../models/associations.js";
 
 const getAllStudents = async (req, res, next) => {
   try {
-    const students = await Student.findAll();
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const sort = req.query.sort === "true";
+
+    const offset = (page - 1) * limit;
+
+    // const students = await Student.findAll();
+
+    const order = sort ? [["firstName", "ASC"]] : [["createdAt", "DESC"]];
+
+    const { count, rows: students } = await Student.findAndCountAll({
+      limit,
+      offset,
+      order,
+    });
+
     res.status(200).json({
       success: true,
       message: "Get all students",
       student: students,
+      pagination: {
+        totalItems: count,
+        totalPages: Math.ceil(count / limit),
+        currentPage: page,
+        limit: limit,
+      },
     });
   } catch (error) {
     next(error);

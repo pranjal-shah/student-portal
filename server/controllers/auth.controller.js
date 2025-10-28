@@ -13,12 +13,17 @@ const register = async (req, res, next) => {
       return next(error);
     }
 
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
 
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
 
-    const user = await User.create({ name, email, password: hashedPassword });
+    const user = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+      role: role || "User",
+    });
 
     const token = jwt.sign(
       { id: user.id, name: user.name, email: user.email, role: user.role },
@@ -31,7 +36,7 @@ const register = async (req, res, next) => {
       .cookie("token", token, {
         httpOnly: true,
         secure: true,
-        sameSite: "Strict",
+        sameSite: "None",
       })
       .json({
         success: true,
@@ -68,7 +73,7 @@ const login = async (req, res, next) => {
       .cookie("token", token, {
         httpOnly: true,
         secure: true,
-        sameSite: "Strict",
+        sameSite: "None",
       })
       .json({
         success: true,
@@ -80,4 +85,19 @@ const login = async (req, res, next) => {
   }
 };
 
-export { register, login };
+const logout = async (req, res, next) => {
+  try {
+    const token =
+      req.cookies?.token || req.header("Authorization")?.replace("Bearer ", "");
+    console.log("s2", token);
+
+    res.status(200).clearCookie("token").json({
+      success: true,
+      message: "User LogedOut successfully",
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export { register, login, logout };

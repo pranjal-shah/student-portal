@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.home-body {
+  height: 100vh;
+  width: 100%;
+}
+
+.home-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+  gap: 0;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+}
+
+/* Sidebar (left full height) */
+.sidebar {
+  background: #343a40;
+  color: #fff;
+  padding: 1rem;
+  overflow: auto; /* allows sidebar to scroll if content grows */
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.sidebar-nav li {
+  margin-bottom: 0.5rem;
+}
+.sidebar-nav a {
+  color: #e9ecef;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+}
+.sidebar-nav a.active,
+.sidebar-nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+/* Right column (top navbar, content, footer) */
+.main-area {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header / content / footer */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  padding: 1rem;
+  overflow: auto; /* allows main content to scroll without moving header/footer */
+  background: #f5f7fa;
+  min-height: 0; /* important so the content area can shrink and scroll */
+}
+
+.content-header {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  max-width: 400px;
+  margin-right: auto;
+}
+
+.search-bar .input-group {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .form-control {
+  border: none;
+  padding-left: 20px;
+}
+
+.search-bar .btn {
+  border: none;
+  padding: 10px 20px;
+}
+
+.content-footer {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  background: #fff;
+  border-top: 1px solid #e9ecef;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.sortable-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sortable-header i {
+  font-size: 0.85rem;
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.sortable-header:hover i {
+  color: #a4a6aa;
+}
+
+/* small screens: collapse to single column */
+@media (max-width: 768px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+  .sidebar {
+    order: -1;
+    width: 100%;
+    height: auto;
+  }
+}

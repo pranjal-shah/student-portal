@@ -3,11 +3,29 @@ import Course from "../models/courses.model.js";
 
 const getAllCourses = async (req, res, next) => {
   try {
-    const courses = await Course.findAll();
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+
+    const offset = (page - 1) * limit;
+
+    // const courses = await Course.findAll();
+
+    const { count, rows: courses } = await Course.findAndCountAll({
+      limit,
+      offset,
+      order: [["createdAt", "DESC"]],
+    });
+
     res.status(200).json({
       success: true,
       message: "Get all courses",
       course: courses,
+      pagination: {
+        totalItems: count,
+        totalPages: Math.ceil(count / limit),
+        currentPage: page,
+        limit: limit,
+      },
     });
   } catch (error) {
     next(error);

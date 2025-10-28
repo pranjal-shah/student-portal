@@ -1,11 +1,14 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Cookies from "js-cookie";
-import { ToastContainer, toast } from "react-toastify";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { login } from "../apis/auth.api";
+import "../auth.css";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const dispatch = useDispatch();
+
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
@@ -14,8 +17,15 @@ const Login = () => {
     isError: false,
     email: "",
     password: "",
-    name: "",
   });
+
+  useEffect(() => {
+    if (location.pathname.startsWith("/login")) {
+      document.body.className = "auth-body";
+    } else {
+      document.body.className = "home-body";
+    }
+  }, [location]);
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -29,45 +39,36 @@ const Login = () => {
     let email, password;
     email = password = null;
     data.errors.map((err) => {
-      err.path === "email" ? (email = err.msg) : (password = err.msg);
+      return err.path === "email" ? (email = err.msg) : (password = err.msg);
     });
 
     setError({
       isError: true,
       email: email || "",
       password: password || "",
-      name: name || "",
     });
   };
-
-  const handleSuccess = (msg) =>
-    toast.success(msg, {
-      position: "bottom-left",
-    });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const data = await login(inputValue);
       console.log(data);
-      const { success, message } = data;
+      const { success } = data;
       if (success) {
-        const token = Cookies.get("token");
-        if (token) {
-          navigate("/");
-        }
-        handleSuccess(message);
+        dispatch({ type: "user/setUser", payload: data.user });
+        navigate("/");
       } else {
-        handleError(message);
+        handleError(data);
       }
     } catch (error) {
       console.log(error);
+      setInputValue({
+        ...inputValue,
+        email: "",
+        password: "",
+      });
     }
-    setInputValue({
-      ...inputValue,
-      email: "",
-      password: "",
-    });
   };
 
   return (
@@ -83,6 +84,9 @@ const Login = () => {
             placeholder="Enter your email"
             onChange={handleOnChange}
           />
+          {error.isError ? (
+            <h6 style={{ color: "red" }}>{error.email}</h6>
+          ) : null}
         </div>
         <div>
           <label htmlFor="password">Password</label>
@@ -93,13 +97,15 @@ const Login = () => {
             placeholder="Enter your password"
             onChange={handleOnChange}
           />
+          {error.isError ? (
+            <h6 style={{ color: "red" }}>{error.password}</h6>
+          ) : null}
         </div>
         <button type="submit">Submit</button>
         <span>
-          Already have an account? <Link to={"/signup"}>Signup</Link>
+          Create New account? <Link to={"/register"}>Register</Link>
         </span>
       </form>
-      <ToastContainer />
     </div>
   );
 };

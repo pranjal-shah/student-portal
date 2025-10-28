@@ -41,3 +41,23 @@ export const login = async (inputValue) => {
     return error.response.data;
   }
 };
+
+export const logout = async () => {
+  try {
+    console.log("lo1");
+    const { data } = await axios.post(
+      `${process.env.REACT_APP_SERVER_URI}/auth/logout`,
+      {},
+      { withCredentials: true }
+    );
+    console.log(data);
+    console.log("lo2");
+
+    return data;
+  } catch (error) {
+    console.log("lo3");
+    return error.response.data;
+  }
+};
+
+
