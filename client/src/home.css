@@ -19,36 +19,56 @@
     Arial;
 }
 
-/* Sidebar (left full height) */
 .sidebar {
   background: #343a40;
   color: #fff;
   padding: 1rem;
-  overflow: auto; /* allows sidebar to scroll if content grows */
+  overflow: auto;
 }
 
-.sidebar-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0 0;
+.sidebar-header {
+  font-size: 1.8rem;
 }
+
 .sidebar-nav li {
   margin-bottom: 0.5rem;
 }
-.sidebar-nav a {
-  color: #e9ecef;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.35rem 0.5rem;
+
+/* sidebar collapse */
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 0.5rem;
   border-radius: 4px;
-}
-.sidebar-nav a.active,
-.sidebar-nav a:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  width: fit-content;
 }
 
-/* Right column (top navbar, content, footer) */
+.menu-icon {
+  color: #d1d1d1;
+}
+
+.menu-icon:hover {
+  color: #ffffff;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.menu-list.open {
+  max-height: 200px;
+}
+
+.menu-list li {
+  margin: 0.3rem 0;
+}
+
 .main-area {
   display: grid;
   grid-template-rows: auto 1fr auto; /* header / content / footer */
@@ -58,9 +78,9 @@
 
 .content {
   padding: 1rem;
-  overflow: auto; /* allows main content to scroll without moving header/footer */
+  overflow: auto;
   background: #f5f7fa;
-  min-height: 0; /* important so the content area can shrink and scroll */
+  min-height: 0;
 }
 
 .content-header {
@@ -124,13 +144,54 @@
 }
 
 /* small screens: collapse to single column */
+
+@media (max-width: 992px) {
+  .home-layout {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .content-body table {
+    font-size: 0.65rem;
+  }
+
+  .sidebar-header {
+    font-size: 1.5rem;
+  }
+
+    .table .op_btn {
+    padding: 7px 7px;
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 768px) {
   .home-layout {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .content-body table {
+    font-size: 0.5rem;
+  }
+
+  .sidebar-header {
+    font-size: 1rem;
+  }
+  .content-header button {
+    padding: 5px 5px;
+    font-size: 0.3rem;
+  }
+
+  .table .op_btn {
+    padding: 5px 5px;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-layout {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
   }
   .sidebar {
-    order: -1;
     width: 100%;
     height: auto;
   }

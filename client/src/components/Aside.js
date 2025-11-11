@@ -1,12 +1,19 @@
-// Aside.jsx
-import React from "react";
+import React, { useState } from "react";
 
-const Aside = ({ selected, setSelected }) => {
+const Aside = ({selected, setSelected}) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
   return (
     <aside className="sidebar">
-      <span className="fs-4">Student Portal</span>
+      <span className="sidebar-header">Student Portal</span>
       <nav className="sidebar-nav">
-        <ul>
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <span className="menu-icon"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <ul className={`menu-list ${isOpen ? "open" : ""}`}>
           <li>
             <button
               className={`btn w-100 text-start ${
@@ -30,7 +37,9 @@ const Aside = ({ selected, setSelected }) => {
           <li>
             <button
               className={`btn w-100 text-start ${
-                selected === "enrollments" ? "btn-primary" : "btn-outline-primary"
+                selected === "enrollments"
+                  ? "btn-primary"
+                  : "btn-outline-primary"
               }`}
               onClick={() => setSelected("enrollments")}
             >
@@ -44,8 +53,6 @@ const Aside = ({ selected, setSelected }) => {
 };
 
 export default Aside;
-
-
 
 // import React from "react";
 // import { Link } from "react-router-dom";
@@ -75,5 +82,3 @@ export default Aside;
 // };
 
 // export default Aside;
-
-
